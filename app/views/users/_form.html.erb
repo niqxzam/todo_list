@@ -1,0 +1,24 @@
+    <div class="first_name-field">
+        <%= form.label :first_name %>
+        <%= form.text_field :first_name, class: 'form-control' %>
+    </div>
+
+    <div class="last_name-field">
+        <%= form.label :last_name %>
+        <%= form.text_field :last_name, class: 'form-control' %>
+    </div>
+
+    <div class="phone-field">
+        <%= form.label :phone %>
+        <%= form.text_field :phone, class: 'form-control' %>
+    </div>
+
+    <div class="email-field">
+      <%= form.label :email %>
+      <%= form.text_field :email, type: 'email', class: 'form-control' %>
+    </div>
+
+    <div class="password-field">
+      <%= form.label :password %>
+      <%= form.password_field :password, class: 'form-control' %>
+    </div>
