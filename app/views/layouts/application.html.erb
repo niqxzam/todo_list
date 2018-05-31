@@ -15,10 +15,12 @@
     <%= link_to "Bucket List", '/', id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
+
         <%= form_tag(listings_path, :method => "get", id: "search-form") do %>
           <%= text_field_tag :search, params[:search], placeholder: "Search Lists" %>
           <%= submit_tag "Search", :name => nil %>
         <% end %>
+
         <li><%= link_to "Home", '/' %></li>
         <li><%= link_to "My Personal List", '/listings' %></li>
         <% if logged_in? %>

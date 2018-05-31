@@ -21,6 +21,9 @@ class ListingsController < ApplicationController
   # GET /listings/new
   def new
     @listing = Listing.new
+    respond_to do |format|
+      format.js 
+    end
   end
 
   # GET /listings/1/edit
@@ -36,6 +39,7 @@ class ListingsController < ApplicationController
       if @listing.save
         format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
         format.json { render :show, status: :created, location: @listing }
+        format.js 
       else
         format.html { render :new }
         format.json { render json: @listing.errors, status: :unprocessable_entity }
@@ -64,6 +68,7 @@ class ListingsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to listings_url, notice: 'Listing was successfully destroyed.' }
       format.json { head :no_content }
+      format.js
     end
   end
 
