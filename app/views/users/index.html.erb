@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<ul>
+		<% TwitterAPI.our_public_tweet.each do |tweets| -%>
+		<li><blockquote><%= tweets.text %></blockquote></li>
+		<% end -%>
+	</ul>
+	
+</body>
+</html>

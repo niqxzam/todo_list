@@ -62,3 +62,15 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'bootstrap-sass', '~> 3.2.0'
+
+gem 'carrierwave', '~> 1.0'
+
+gem "mini_magick"
+
+gem 'omniauth-google-oauth2'
+
+gem 'omniauth'
+
+gem 'figaro'
+
+gem 'twitter'
