@@ -6,7 +6,7 @@
 <body>
 
 	<ul>
-		<% TwitterAPI.our_public_tweet.each do |tweets| -%>
+		<% Twitter.our_public_tweet.each do |tweets| -%>
 		<li><blockquote><%= tweets.text %></blockquote></li>
 		<% end -%>
 	</ul>
