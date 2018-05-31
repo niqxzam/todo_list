@@ -1,6 +1,6 @@
 require 'twitter'
 
-class Twitter
+class TwitterAPI
   def self.our_public_tweet
 	client.user_timeline('lucystodo', count: 20)  
   end
