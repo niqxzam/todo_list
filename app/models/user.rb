@@ -1,5 +1,5 @@
 class User < ApplicationRecord
- has_many :listings
+ has_many :listings, dependent: :destroy
  has_many :authentications, dependent: :destroy
  has_secure_password
  before_save { self.email = email.downcase }

@@ -74,3 +74,13 @@ gem 'omniauth'
 gem 'figaro'
 
 gem 'twitter'
+
+gem 'rspec'
+
+gem 'rspec-given'
+
+gem 'rspec-rails'
+
+gem 'shoulda-matchers'
+
+gem 'rails-controller-testing'
