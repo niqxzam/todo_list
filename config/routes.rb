@@ -1,15 +1,12 @@
 Rails.application.routes.draw do
 
 
-  resources :listings do
+  resources :listings
 
-  get '/listings', to: 'listings#index'
   get '/listings/new', to: 'listings#new'
   post '/listings', to: 'listings#create'
   delete '/listings/:id', to: 'listings#destroy'
   get '/listings/:id/edit', to: 'listings#edit'
-
-end
 
   get '/', to: 'users#index'
   get  '/signup',  to: 'users#new'

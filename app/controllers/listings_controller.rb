@@ -32,7 +32,7 @@ class ListingsController < ApplicationController
   def create
     @listing = Listing.new(listing_params)
     respond_to do |format|
-      if @listing.save
+      if @listing.save(validate: false)
         format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
         format.json { render :show, status: :created, location: @listing }
       else
