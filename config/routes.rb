@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   resources :listings
 
+  get '/listings/new', to: 'listings#new'
+
   get '/', to: 'users#index'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
