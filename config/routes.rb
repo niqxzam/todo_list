@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get '/listings/new', to: 'listings#new'
   post '/listings', to: 'listings#create'
+  get    '/listings/:id/edit', to: 'listings#edit'
   delete '/listings/:id', to: 'listings#destroy'
   get '/listings/:id/edit', to: 'listings#edit'
 
