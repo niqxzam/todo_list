@@ -21,10 +21,15 @@ class ListingsController < ApplicationController
   # GET /listings/new
   def new
     @listing = Listing.new
+    respond_to do |format|
+      format.html 
+      format.js 
+    end
   end
 
   # GET /listings/1/edit
   def edit
+    @listing = Listing.find(params[:id])
   end
 
   # POST /listings

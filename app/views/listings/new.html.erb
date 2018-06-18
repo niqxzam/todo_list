@@ -1,9 +1,9 @@
 <h1>New Listing</h1>
 
-<%= form_for(@listing, url: listings_path) do |form| %>
-    <%= render partial: '/listings/form', object: form %>
-<% end %>
+<%= render partial: '/listings/form', object: form %>
 
 <%= link_to 'Back', listings_path %>
+
+
 
 

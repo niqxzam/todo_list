@@ -1,4 +1,6 @@
-  <div class="images-field">
+<%= form_for(@listing, url: listings_path) do |form| %>
+
+<div class="images-field">
     <%= form.label :image %>
     <%= form.file_field :image %>
   </div>
@@ -16,4 +18,8 @@
   <div class="actions">
     <%= form.submit "Create my list" %>
   </div>
+    
+<% end %>
 
+
+  

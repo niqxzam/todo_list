@@ -84,3 +84,9 @@ gem 'rspec-rails'
 gem 'shoulda-matchers'
 
 gem 'rails-controller-testing'
+
+gem 'jquery-rails'
+
+gem 'rails-ujs'
+
+gem 'jquery-ui-rails'

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  resources :search_suggestions
   resources :listings
 
   get '/listings/new', to: 'listings#new'
