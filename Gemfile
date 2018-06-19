@@ -88,5 +88,3 @@ gem 'rails-controller-testing'
 gem 'jquery-rails'
 
 gem 'rails-ujs'
-
-gem 'jquery-ui-rails'
